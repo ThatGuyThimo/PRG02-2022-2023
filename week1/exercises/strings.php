@@ -18,11 +18,11 @@ $url = 'http://howmanyofme.com/';
 <body>
 <section>
     <h1>My name</h1>
-    <p><?= $myName ?></p>
-    <p>
+    <div><?= $myName ?></div>
+    <div>
         <!--Add the variables $myName and $url to the link-->
         <a href="">Link to </a>
-    </p>
+    </div>
 </section>
 </body>
 </html>
