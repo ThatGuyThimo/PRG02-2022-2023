@@ -30,7 +30,7 @@ Is bovenstaande je al bekend? Volg dan de [Advanced cursus](advanced)
 
 **Clone maken van deze repository op jouw harde schijf**
 - Ga in PHPStorm naar Git > Clone
-- Url: **https://github.com/HR-CMGT/PRG02-2021-2022**
+- Url: **https://github.com/HR-CMGT/PRG02-2022-2023**
 - Directory: [Link naar htdocs in xampp folder]/PRG02
 
 ## Lesopdrachten
