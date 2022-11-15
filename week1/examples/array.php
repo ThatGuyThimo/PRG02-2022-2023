@@ -11,6 +11,8 @@ for ($i = 0; $i < count($defaultArray); $i++) {
     echo $defaultArray[$i];
 }
 
+echo "</br>";
+
 $associativeArray = [
     'eerste' => 'Wijn',
     'tweede' => 'haven',

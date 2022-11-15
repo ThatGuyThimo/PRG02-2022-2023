@@ -1,0 +1,26 @@
+[
+  {
+    "number": 1050136,
+    "name": "Thimo",
+    "classNumber": "1A",
+    "interest": "kaas"
+  },
+  {
+    "number": 1310133,
+    "name": "Martijn",
+    "classNumber": "1D",
+    "interest": "banaan"
+  },
+  {
+    "number": 1060136,
+    "name": "Calvin",
+    "classNumber": "1A",
+    "interest": "mango"
+  },
+  {
+    "number": 1420138,
+    "name": "Chris",
+    "classNumber": "1D",
+    "interest": "appel"
+  }
+]
