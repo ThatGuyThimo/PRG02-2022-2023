@@ -7,7 +7,7 @@
  */
 
 /**
- * This method makes half a Christmas tree (upside down) with the provided characters
+ * This method merges the first name and the last name
  * @param $firstName
  * @param $lastName
  * @return string
