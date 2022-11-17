@@ -33,9 +33,9 @@
 
             <form action="" method="">
 
-                <label for="firstname">Voornaam</label>
+                <label for="firstName">Voornaam</label>
 
-                <input type="text" id="firstname" name="">
+                <input type="text" id="firstName" name="">
 
 
                 <input type="submit" name="submit" value="Versturen">

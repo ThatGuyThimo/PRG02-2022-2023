@@ -1,6 +1,6 @@
 <?php
 
-$result = $_POST['firstname'];
+$result = $_POST['firstName'];
 
 ?>
 <!doctype html>
