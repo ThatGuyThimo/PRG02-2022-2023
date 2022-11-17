@@ -21,7 +21,7 @@
         <h2 class="title">Oefening 4 - POST - Postback</h2>
 
         <p class="mb-4">
-            In deze opdracht wordt het fomulier door middel van een 'postback'
+            In deze opdracht wordt het formulier door middel van een 'postback'
             teruggestuurd naar dezelfde pagina. Vang bovenaan de pagina de ingevoerde
             info op, maar alleen als het formulier verzonden is.
             <br>
