@@ -8,9 +8,9 @@ if (isset($_GET['code'])) {
 <html lang="en">
 	<head>
 		<title>Pagina 2</title>
-		<meta charset="utf-8" >
+		<meta charset="utf-8">
 	</head>
-	<body >
+	<body>
         <section>
             <h1>Dit is pagina 2</h1>
             <p>

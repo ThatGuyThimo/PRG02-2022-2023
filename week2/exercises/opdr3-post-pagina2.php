@@ -21,7 +21,7 @@ $result = $_POST['firstName'];
             Goed gedaan! Jouw naam is: <b><?= $result ?></b>
         </p>
 
-        <footer class="footer">
+        <footer class="footer mt-4">
             <a href="index.html">Terug naar het overzicht van de lesopdrachten</a>
         </footer>
     </div>
