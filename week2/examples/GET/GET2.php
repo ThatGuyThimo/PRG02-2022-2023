@@ -8,7 +8,7 @@ if (isset($_GET['code'])) {
 <html lang="en">
 	<head>
 		<title>Pagina 2</title>
-		<meta charset="utf-8" />
+		<meta charset="utf-8" >
 	</head>
 	<body >
         <section>
@@ -22,11 +22,11 @@ if (isset($_GET['code'])) {
             </p>
             <p>
                 Zo weet ik namelijk de geheime code van pagina 1.
-                <br/>
+                <br>
                 <b>Code: <?= $code ?></b>
             </p>
             <p>
-                <br/>
+                <br>
             </p>
             <p>
                 Je mag altijd terug naar

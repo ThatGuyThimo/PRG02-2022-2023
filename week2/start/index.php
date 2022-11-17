@@ -78,11 +78,11 @@ $musicAlbums = [
 <head>
     <meta charset="UTF-8">
     <title>Music Collection</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <h1>Music Collection</h1>
-    <hr/>
+    <hr>
     <table>
         <thead>
         <tr>

@@ -9,8 +9,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta name="description" content="width=device-width, user-scalable=no"/>
-    <meta charset="utf-8"/>
+    <meta name="description" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
     <title>Oefening 2 - GET - Postback</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>

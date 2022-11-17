@@ -28,10 +28,10 @@ if (isset($_POST['submit'])) {
 <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>">
     <div>
         <label for="title">Titel</label>
-        <input id="title" type="text" name="title"/>
+        <input id="title" type="text" name="title">
     </div>
     <div>
-        <input type="submit" name="submit" value="Verzend!"/>
+        <input type="submit" name="submit" value="Verzend!">
     </div>
 </form>
 </body>

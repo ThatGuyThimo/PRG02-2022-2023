@@ -11,8 +11,8 @@ if(isset($_POST['submit'])) {
 <html lang="en">
 	<head>
 		<title>POST - pagina 2</title>
-		<meta name="description" content="width=device-width, user-scalable=no" />
-		<meta charset="utf-8" />
+		<meta name="description" content="width=device-width, user-scalable=no" >
+		<meta charset="utf-8" >
 	</head>
 	<body >
         <section>

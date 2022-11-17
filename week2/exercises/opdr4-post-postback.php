@@ -27,7 +27,7 @@
             <br>
             Maak het formulier verder kloppend en zorg dat er geen foutmeldingen meer zijn.
         </p>
-        <p><br/></p>
+        <p><br></p>
 
         <?php if (!isset($name)) { ?>
 
@@ -35,10 +35,10 @@
 
                 <label for="firstname">Voornaam</label>
 
-                <input type="text" id="firstname" name=""/>
+                <input type="text" id="firstname" name="">
 
 
-                <input type="submit" name="submit" value="Versturen"/>
+                <input type="submit" name="submit" value="Versturen">
 
             </form>
 

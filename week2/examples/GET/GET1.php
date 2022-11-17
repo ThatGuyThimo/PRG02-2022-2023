@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Pagina 1</title>
-		<meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style.css"/>
+		<meta charset="utf-8" >
+        <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body >
         <div class="site-wrapper">
@@ -17,7 +17,7 @@
                 </nav>
             </header>
 
-            <img src="https://placeimg.com/1000/300/tech" alt="Header Image tech" />
+            <img src="https://placeimg.com/1000/300/tech" alt="Header Image tech">
 
             <main class="content-wrapper">
                 <article class="site-content">
