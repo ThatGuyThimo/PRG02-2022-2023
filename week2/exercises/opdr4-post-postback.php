@@ -20,14 +20,13 @@
     <div class="container">
         <h2 class="title">Oefening 4 - POST - Postback</h2>
 
-        <p>
+        <p class="mb-4">
             In deze opdracht wordt het fomulier door middel van een 'postback'
             teruggestuurd naar dezelfde pagina. Vang bovenaan de pagina de ingevoerde
             info op, maar alleen als het formulier verzonden is.
             <br>
             Maak het formulier verder kloppend en zorg dat er geen foutmeldingen meer zijn.
         </p>
-        <p><br></p>
 
         <?php if (!isset($name)) { ?>
 
@@ -48,7 +47,7 @@
             </p>
         <?php } ?>
 
-        <footer class="footer">
+        <footer class="footer mt-4">
             <a href="index.html">Terug naar het overzicht van de lesopdrachten</a>
         </footer>
     </div>

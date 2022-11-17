@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
 		<title>Pagina 1</title>
-		<meta charset="utf-8" >
+		<meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
 	</head>
-	<body >
+	<body>
         <div class="site-wrapper">
             <header class="site-header">
                 <h1 class="site-title">Pagina 1</h1>
