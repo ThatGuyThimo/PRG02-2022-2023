@@ -2,7 +2,7 @@
 
 // controleer of het formulier verstuurd is. Dit doe je door te checken of de submit aanwezig is in de $_POST
 
-// Als dat waar is, stel je de variabele $name gelijkt aan de meegestuurde info
+// Als dat waar is, stel je de variabele $name gelijk aan de meegestuurde info
 
 ?>
 <!doctype html>
