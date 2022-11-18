@@ -82,7 +82,7 @@ $musicAlbums = [
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-<div class="container">
+<div class="container px-4">
     <h1 class="title mt-4">Music Collection</h1>
     <hr>
     <table class="table is-striped">
