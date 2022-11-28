@@ -1,6 +1,6 @@
-<?php namespace Demo\HRClasses;
+<?php namespace StudentsList\SchoolClasses;
 
-use Demo\Persons\Student;
+use StudentsList\Persons\Student;
 
 /**
  * Class CMGTClass
