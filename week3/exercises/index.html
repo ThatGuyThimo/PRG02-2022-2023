@@ -30,8 +30,7 @@
             <li>Download <a href="music_collection.sql" download>music_collection.sql</a></li>
             <li>Ga naar <a href="http://localhost/phpmyadmin/">PhpMyAdmin</a></li>
             <li>Klik op 'Import'</li>
-            <li>Klik op 'Choose file' / 'Selecteer bestand' en selecteer de zojuist gedownloade music_collection.sql
-            </li>
+            <li>Klik op 'Choose file' / 'Selecteer bestand' en selecteer de zojuist gedownloade music_collection.sql</li>
             <li>Klik vervolgens helemaal onderaan de pagina op de knop 'Import'</li>
         </ul>
         <h4 class="title is-5">
@@ -39,15 +38,13 @@
         </h4>
         <p>
             Via SQL gaan je specifieke vragen stellen aan de database. Dit doe je d.m.v. een query en dan specifiek een
-            <a href="https://www.w3schools.com/sql/sql_select.asp">SELECT Statement</a>.
+            <a href="https://www.w3schools.com/sql/sql_select.asp" target="_blank">SELECT Statement</a>.
         </p>
-        <p>
-            <em>
-                Open de music_collection database
-                door op het 'plusje' voor de naam te klikken en klik vervolgens op de naam 'albums'. Klik nu bovenin op
-                het tabblad 'SQL'. Hier kun je SQL-queries invoeren en zien welk resultaat de database als antwoord geeft.
-                Let op! Het resultaat van een SELECT Statement is altijd een tabel, <b>ook als deze leeg is</b>.
-            </em>
+        <p class="is-italic">
+            Open de music_collection database
+            door op het 'plusje' voor de naam te klikken en klik vervolgens op de naam 'albums'. Klik nu bovenin op
+            het tabblad 'SQL'. Hier kun je SQL-queries invoeren en zien welk resultaat de database als antwoord geeft.
+            Let op! Het resultaat van een SELECT Statement is altijd een tabel, <strong>ook als deze leeg is</strong>.
         </p>
         <blockquote>
             Formuleer voor onderstaande zinnen de juiste SELECT Statements en voer deze uit op de database.
@@ -58,8 +55,12 @@
                 <li>Toon alle albums die meer dan 10 tracks bevatten en NA 2014 zijn uitgebracht. (Aantal: 9)</li>
                 <li>
                     Toon alle albums waarvan de artiest begint met een ‘H’. (Aantal: 3). Gebruik hierbij het
-                    <a href="https://www.w3schools.com/sql/sql_like.asp"><code><u>LIKE</u></code></a> keyword
+                    <a href="https://www.w3schools.com/sql/sql_like.asp" target="_blank">
+                        <code class="is-underlined">LIKE</code></a> keyword
                 </li>
+                <li>Toon de eerste 5 albums op alfabetische volgorde van de artiest. Gebruik hierbij de
+                    <a href="https://www.w3schools.com/sql/sql_orderby.asp" target="_blank">
+                        <code class="is-underlined">ORDER BY</code></a> en <code>LIMIT</code></li>
             </ul>
         </blockquote>
         <h3 class="title is-4">
@@ -71,12 +72,10 @@
             Dit vervangt de multidimensionale array uit eerdere lessen.
             Gebruik hiervoor de database uit opdracht 1. Haal albumdata op uit de database en toon deze in (de bestaande) tabel.
         </p>
-        <p>
-            <em>
-                Tip: in de map <code>includes</code> staat het bestand <code>connection.php</code>. Deze kan je importeren
-                met de PHP-functie <code>require_once</code>. Hierna is er verbinding gemaakt met de database. Dit kun je ook doen
-                bij de volgende opdracht (details.php)
-            </em>
+        <p class="is-italic">
+            Tip: in de map <code>includes</code> staat het bestand <code>connection.php</code>. Deze kan je importeren
+            met de PHP-functie <code>require_once</code>. Hierna is er verbinding gemaakt met de database. Dit kun je ook doen
+            bij de volgende opdracht (details.php)
         </p>
         <h3 class="title is-4">
             Opdracht 3 - DETAILS met database
@@ -90,13 +89,17 @@
         <ul>
             <li>De eindgebruiker wil nu maar maximaal 5 muziekalbums tegelijk op de index pagina zien. Maak gebruik van
                 <a href="https://bulma.io/documentation/components/pagination/" target="_blank">paginatie</a> om maar 5 albums per
-                keer te bekijken.</li>
+                keer te bekijken.
+            </li>
             <li>Ga werken aan de create.php pagina. Let hier vooral op het toevoegen van validatie op alle velden. Gaat er iets fout,
-                toon dan een foutmelding. Zorg er ook voor dat de eerder ingevulde velden niet verloren gaan.</li>
+                toon dan een foutmelding. Zorg er ook voor dat de eerder ingevulde velden niet verloren gaan.
+            </li>
             <li>Kijk nu of je dit zelf kunt uitbreiden door de informatie ook op te slaan in je database via een INSERT-query.
-                (komt volgende week terug in de les!)</li>
+                (komt volgende week terug in de les!)
+            </li>
             <li>Ga alvast nadenken hoe je database voor je reserveringssysteem eruit moet komen te zien. Hier gaan we morgen
-                tijdens CLE mee aan de slag.</li>
+                tijdens CLE mee aan de slag.
+            </li>
         </ul>
     </div>
 </section>
