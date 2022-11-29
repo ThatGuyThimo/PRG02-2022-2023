@@ -10,7 +10,7 @@ In deze opdracht ga je oefenen met het ophalen van data uit de database. Hiervoo
 #### Importeer de database
 
 *   Zorg ervoor dat (in XAMPP) de Apache en SQL server aanstaan
-*   Download [music\_collection.sql](music_collection.sql)
+*   Download [music\_collection.sql](exercises/music_collection.sql)
 *   Ga naar [PhpMyAdmin](http://localhost/phpmyadmin/)
 *   Klik op 'Import'
 *   Klik op 'Choose file' / 'Selecteer bestand' en selecteer de zojuist gedownloade music\_collection.sql
