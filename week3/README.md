@@ -5,7 +5,7 @@ Overzicht van de lesopdrachten van week 3
 
 ### Opdracht 1
 
-In deze opdracht ga je oefenen met het ophalen van data uit de database. Hiervoor heb je eerst een database nodig. Er is al een database aangemaakt en deze is geëxporteerd in de vorm van een `.sql` bestand met de naam: `music\_collection.sql` (in de map week3/exercises)
+In deze opdracht ga je oefenen met het ophalen van data uit de database. Hiervoor heb je eerst een database nodig. Er is al een database aangemaakt en deze is geëxporteerd in de vorm van een `.sql` bestand met de naam: `music_collection.sql` (in de map week3/exercises)
 
 #### Importeer de database
 
