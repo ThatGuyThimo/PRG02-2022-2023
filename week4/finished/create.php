@@ -3,9 +3,6 @@
 
 //Check if Post isset, else do nothing
 if (isset($_POST['submit'])) {
-    //Require database in this file & image helpers
-    require_once "includes/database.php";
-
     //Postback with the data showed to the user, first retrieve data from 'Super global'
     $name   = $_POST['name'];
     $artist = $_POST['artist'];
@@ -17,6 +14,9 @@ if (isset($_POST['submit'])) {
     require_once "includes/form-validation.php";
 
     if (empty($errors)) {
+        //Require database in this file & image helpers
+        require_once "includes/database.php";
+
         //Save the record to the database
         $query = "INSERT INTO albums (name, artist, genre, year, tracks)
                   VALUES ('$name', '$artist', '$genre', $year, $tracks)";
