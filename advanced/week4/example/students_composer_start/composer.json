@@ -1,8 +1,9 @@
 {
-    "name": "thimo/assignment",
+    "name": "thimo/students_composer_start",
     "autoload": {
         "psr-4": {
-            "System\\": "includes/classes/System"
+            "Thimo\\StudentsComposerStart\\": "src/",
+            "StudentsList\\": "includes/classes/StudentsList/"
         }
     },
     "authors": [

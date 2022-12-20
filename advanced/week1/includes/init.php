@@ -1,7 +1,8 @@
 <?php
 require_once 'config.php';
-require_once 'classes/CMGTClass.php';
-require_once 'classes/Student.php';
+require_once "vendor/autoload.php";
+
+use Demo\HRClasses\CMGTClass;
 
 try {
     //load data & convert it to an array
@@ -28,4 +29,3 @@ try {
 //JSON omzetten naar class
     // de cmgtclass students array vullen
 //var
-?>

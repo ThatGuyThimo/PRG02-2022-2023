@@ -1,10 +1,7 @@
 <?php
 //Require needed files
 require_once 'settings.php';
-require_once 'classes/System/Databases/Database.php';
-require_once 'classes/System/MusicCollection/Collection.php';
-require_once 'classes/System/MusicCollection/Album.php';
-
+require_once 'vendor/autoload.php';
 //Set variable for errors
 $errors = [];
 

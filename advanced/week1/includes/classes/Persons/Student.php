@@ -1,6 +1,6 @@
-<?php
+<?php namespace Demo\Person;
 
-class Student
+class Student extends Person
 {
     /**
      * @param string $name
@@ -8,11 +8,11 @@ class Student
      * @param int $number
      */
     public function __construct(
-        public string $name,
+        string $name,
         public string $classNumber,
         public int $number,
     )
     {
-
+    $this->name = $name;
     }
 }

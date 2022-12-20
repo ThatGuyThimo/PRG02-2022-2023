@@ -1,10 +1,6 @@
 <?php
 require_once 'settings.php';
-require_once 'classes/StudentsList/Databases/Database.php';
-require_once 'classes/StudentsList/SchoolClasses/HRClass.php';
-require_once 'classes/StudentsList/SchoolClasses/CMGTClass.php';
-require_once 'classes/StudentsList/Persons/Person.php';
-require_once 'classes/StudentsList/Persons/Student.php';
+require_once "vendor/autoload.php";
 
 try {
     //New DB connection

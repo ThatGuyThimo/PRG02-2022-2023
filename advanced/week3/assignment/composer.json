@@ -2,6 +2,7 @@
     "name": "thimo/assignment",
     "autoload": {
         "psr-4": {
+            "Thimo\\Assignment\\": "src/",
             "System\\": "includes/classes/System"
         }
     },

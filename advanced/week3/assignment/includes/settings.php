@@ -3,7 +3,7 @@
 const DB_HOST = 'localhost';
 const DB_USER = 'root';
 const DB_PASS = '';
-const DB_NAME = 'music_collection_images';
+const DB_NAME = 'proadvanced';
 
 //Custom error handler, so every error will throw a custom ErrorException
 set_error_handler(function ($severity, $message, $file, $line) {

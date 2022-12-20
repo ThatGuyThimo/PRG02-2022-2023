@@ -3,7 +3,7 @@
 const DB_HOST = 'localhost';
 const DB_USER = 'root';
 const DB_PASS = '';
-const DB_NAME = 'music_collection_users';
+const DB_NAME = 'proadvanced';
 
 //Paths
 const BASE_PATH = '/PRG02-2022-2023/advanced/week4/assignment/';

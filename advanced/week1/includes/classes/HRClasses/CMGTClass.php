@@ -1,12 +1,16 @@
-<?php
+<?php namespace Demo\HRClasses;
 
-class CMGTClass
+use Demo\Person\Student;
+
+
+class CMGTClass implements HRClass
 {
 
     public string $name = 'klas 1';
     public string $slogan = 'bananen zijn gezond';
     public string $teacher = 'Antwan';
     private array $students = [];
+    public const MAX_STUDENTS = 25;
 
     /**
      * @return Student[]
@@ -16,16 +20,21 @@ class CMGTClass
     }
 
     /**
-     * @param array $value
+     * @param array $studentRaw
      * @return void
+     * @throws \Exception
      */
-    public function addStudent(array $value): void
+    public function addStudent(array $studentRaw): void
     {
         $this->students[] = new Student(
-            $value['name'],
-            $value['classNumber'],
-            $value['number']
+            $studentRaw['name'],
+            $studentRaw['classNumber'],
+            $studentRaw['number']
         );
+
+        if ($this->getTotalStudents() > self::MAX_STUDENTS) {
+            throw new \Exception('to many students max ' . self::MAX_STUDENTS);
+        }
     }
 
     /**
