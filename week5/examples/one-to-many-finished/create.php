@@ -1,32 +1,47 @@
 <?php
 /** @var mysqli $db */
+//Require database in this file
+require_once "includes/database.php";
+
+//Get the categories from the database with a SQL query
+$query = "SELECT * FROM categories";
+$result = mysqli_query($db, $query) or die ('Error: ' . $query );
+
+//Loop through the result to create a custom array
+$categories = [];
+while ($row = mysqli_fetch_assoc($result)) {
+    $categories[] = $row;
+}
 
 //Check if Post isset, else do nothing
 if (isset($_POST['submit'])) {
     //Postback with the data showed to the user, first retrieve data from 'Super global'
-    $name   = $_POST['name'];
-    $artist = $_POST['artist'];
-    $genre  = $_POST['genre'];
-    $year   = $_POST['year'];
-    $tracks = $_POST['tracks'];
+    $name = mysqli_escape_string($db, $_POST['name']);
+    $category_id = mysqli_escape_string($db, $_POST['category-id']);
+    $description = mysqli_escape_string($db, $_POST['description']);
+    $price = mysqli_escape_string($db, $_POST['price']);
 
-    //Require the form validation handling
-    require_once "includes/form-validation.php";
+    if ($name == "") {
+        $errors['name'] = 'Name cannot be empty';
+    }
+    if ($description == "") {
+        $errors['description'] = 'Description cannot be empty';
+    }
+    if ($price == "") {
+        $errors['price'] = 'Price cannot be empty';
+    }
 
     if (empty($errors)) {
-        //Require database in this file & image helpers
-        require_once "includes/database.php";
-
         //Save the record to the database
-        $query = "INSERT INTO albums (name, artist, genre, year, tracks)
-                  VALUES ('$name', '$artist', '$genre', $year, $tracks)";
-        $result = mysqli_query($db, $query) or die('Error: '.mysqli_error($db). ' with query ' . $query);
+        $query = "INSERT INTO products (category_id, name, description, price)
+                  VALUES ('$category_id', '$name', '$description', '$price')";
+        $result = mysqli_query($db, $query) or die('Error: ' . mysqli_error($db) . ' with query ' . $query);
 
         //Close connection
         mysqli_close($db);
 
         // Redirect to index.php
-        header('Location: index.php');
+        header('Location: create.php');
         exit;
     }
 }
@@ -39,11 +54,11 @@ if (isset($_POST['submit'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Muziekalbums - Create</title>
+    <title>Create Product</title>
 </head>
 <body>
 <div class="container px-4">
-    <h1 class="title mt-4">Create new album</h1>
+    <h1 class="title mt-4">Create new product</h1>
 
     <section class="columns">
         <form class="column is-6" action="" method="post">
@@ -62,71 +77,55 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
             </div>
-
             <div class="field is-horizontal">
                 <div class="field-label is-normal">
-                    <label class="label" for="artist">Artist</label>
+                    <label class="label" for="category-id">Category</label>
                 </div>
                 <div class="field-body">
                     <div class="field">
-                        <div class="control">
-                            <input class="input" id="artist" type="text" name="artist" value="<?= $artist ?? '' ?>"/>
+                        <div class="control select">
+                            <select id="category-id" name="category-id">
+                                <?php foreach($categories as $category) { ?>
+                                    <option value="<?= $category['id'] ?>"><?= $category['name'] ?></option>
+                                <?php } ?>
+                            </select>
                         </div>
                         <p class="help is-danger">
-                            <?= $errors['artist'] ?? '' ?>
+                            <?= $errors['category_id'] ?? '' ?>
                         </p>
                     </div>
                 </div>
             </div>
-
             <div class="field is-horizontal">
                 <div class="field-label is-normal">
-                    <label class="label" for="genre">Genre</label>
+                    <label class="label" for="description">Name</label>
                 </div>
                 <div class="field-body">
                     <div class="field">
                         <div class="control">
-                            <input class="input" id="genre" type="text" name="genre" value="<?= $genre ?? '' ?>"/>
+                            <textarea class="textarea" id="description" name="description"><?= $description ?? '' ?></textarea>
                         </div>
                         <p class="help is-danger">
-                            <?= $errors['genre'] ?? '' ?>
+                            <?= $errors['description'] ?? '' ?>
                         </p>
                     </div>
                 </div>
             </div>
-
             <div class="field is-horizontal">
                 <div class="field-label is-normal">
-                    <label class="label" for="year">Year</label>
+                    <label class="label" for="price">Price</label>
                 </div>
                 <div class="field-body">
                     <div class="field">
                         <div class="control">
-                            <input class="input" id="year" type="text" name="year" value="<?= $year ?? '' ?>"/>
+                            <input class="input" id="price" type="number" name="price" value="<?= $price ?? '' ?>"/>
                         </div>
                         <p class="help is-danger">
-                            <?= $errors['year'] ?? '' ?>
+                            <?= $errors['price'] ?? '' ?>
                         </p>
                     </div>
                 </div>
             </div>
-
-            <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label" for="tracks">Tracks</label>
-                </div>
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" id="tracks" type="text" name="tracks" value="<?= $tracks ?? '' ?>"/>
-                        </div>
-                        <p class="help is-danger">
-                            <?= $errors['tracks'] ?? '' ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
             <div class="field is-horizontal">
                 <div class="field-label is-normal"></div>
                 <div class="field-body">
@@ -135,7 +134,6 @@ if (isset($_POST['submit'])) {
             </div>
         </form>
     </section>
-    <a class="button mt-4" href="index.php">&laquo; Go back to the list</a>
 </div>
 </body>
 </html>
